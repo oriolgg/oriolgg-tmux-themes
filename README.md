@@ -12,6 +12,6 @@ Hit `prefix + I` to fetch the plugin and source it. The plugin should now be wor
 
 3 themes are provided so you can pick and choose via `.tmux.conf` option:
 
-- `set -g @colors-oriolgg 'oriolgg-solarized-light'`
-- `set -g @colors-oriolgg 'oriolgg-solarized-dark'`
-- `set -g @colors-oriolgg 'oriolgg-dracula'`
+- `set -g @colors-oriolgg 'solarized-light'`
+- `set -g @colors-oriolgg 'solarized-dark'`
+- `set -g @colors-oriolgg 'dracula'`

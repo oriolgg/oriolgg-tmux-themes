@@ -2,8 +2,8 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-theme_option="@colors-oriolgg"
-default_theme="oriolgg-solarized-light"
+theme_name="@oriolgg-tmux-theme"
+default_theme="solarized-light"
 
 get_tmux_option() {
 	local option="$1"
@@ -17,7 +17,7 @@ get_tmux_option() {
 }
 
 main() {
-	local theme="$(get_tmux_option "$theme_option" "$default_theme")"
-	tmux source-file "$CURRENT_DIR/colors-oriolgg-${theme}.conf"
+	local theme="$(get_tmux_option "$theme_name" "$default_theme")"
+	tmux source-file "$CURRENT_DIR/tmux-theme-${theme}.conf"
 }
 main
